@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:responsiveweb/presentation/homepage/widgets/call_to_action_button.dart';
+import 'package:responsiveweb/presentation/core/buttons/call_to_action_button.dart';
 import 'package:responsiveweb/typography.dart';
 
 class MultiPlattform extends StatelessWidget {
@@ -67,8 +67,11 @@ class MultiPlattform extends StatelessWidget {
                   const SizedBox(
                     height: 25,
                   ),
-                  const CallToAction(
-                      filled: false, text: "See the target platforms")
+                  CallToAction(
+                    filled: false,
+                    text: "See the target platforms",
+                    callback: () {},
+                  )
                 ],
               ),
             ),

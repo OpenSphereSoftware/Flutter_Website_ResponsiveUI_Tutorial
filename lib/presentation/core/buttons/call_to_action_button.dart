@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class CallToAction extends StatelessWidget {
   final bool filled;
   final String text;
-  const CallToAction({Key? key, required this.filled, required this.text})
+  final Function callback;
+  const CallToAction({Key? key, required this.filled, required this.text, required this.callback})
       : super(key: key);
 
   get fontFamily => null;
@@ -13,7 +14,7 @@ class CallToAction extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
-        onTap: () {},
+        onTap: callback(),
         child: IntrinsicWidth(
           child: Container(
             height: 40,

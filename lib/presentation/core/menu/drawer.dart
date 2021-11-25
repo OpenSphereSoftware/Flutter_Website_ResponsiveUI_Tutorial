@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsiveweb/presentation/core/menu/flutter_home_image.dart';
-import 'package:responsiveweb/presentation/core/menu/get_started_button.dart';
+import 'package:responsiveweb/presentation/core/buttons/get_started_button.dart';
 import 'package:responsiveweb/presentation/core/menu/menue_item.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -34,7 +34,7 @@ class CustomDrawer extends StatelessWidget {
                   height: 40,
                 ),
                 const MenuItem(
-                  url: "some url oder nav link",
+                  path: "/docs",
                   name: "Docs",
                   isInDrawer: true,
                 ),
@@ -42,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
                   height: 20,
                 ),
                 const MenuItem(
-                  url: "some url oder nav link",
+                  path: "/showcase",
                   name: "Showcase",
                   isInDrawer: true,
                 ),
@@ -50,7 +50,7 @@ class CustomDrawer extends StatelessWidget {
                   height: 20,
                 ),
                 const MenuItem(
-                  url: "some url oder nav link",
+                  path: "/development",
                   name: "Development",
                   isInDrawer: true,
                 ),
@@ -58,7 +58,7 @@ class CustomDrawer extends StatelessWidget {
                   height: 20,
                 ),
                 const MenuItem(
-                  url: "some url oder nav link",
+                  path: "/ecosystem",
                   name: "Ecosystem",
                   isInDrawer: true,
                 )

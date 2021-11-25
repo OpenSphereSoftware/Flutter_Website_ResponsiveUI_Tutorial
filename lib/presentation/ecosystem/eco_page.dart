@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:responsiveweb/presentation/core/page_wrapper/centerd_constrained_wrapper.dart';
 import 'package:responsiveweb/presentation/core/page_wrapper/page_template.dart';
-import 'package:responsiveweb/presentation/homepage/widgets/developer_experience.dart';
-import 'package:responsiveweb/presentation/homepage/widgets/multi_plattform.dart';
+import 'package:responsiveweb/presentation/ecosystem/widgets/ecosystem.dart';
 
-class Homepage extends StatelessWidget {
-  const Homepage({Key? key}) : super(key: key);
+class EcosystemPage extends StatelessWidget {
+  const EcosystemPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     List<Widget> partblocks = [
-      const CenteredConstrainedWrapper(MultiPlattform()),
-      const CenteredConstrainedWrapper(DeveloperExperience())
+      const Ecosystem(),
     ];
+
     return PageTemplate(
       child: ListView.builder(
           itemCount: partblocks.length,

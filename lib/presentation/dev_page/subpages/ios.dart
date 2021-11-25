@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:responsiveweb/presentation/core/page_wrapper/centerd_constrained_wrapper.dart';
 import 'package:responsiveweb/presentation/core/page_wrapper/page_template.dart';
 import 'package:responsiveweb/presentation/dev_page/widgets/development.dart';
 
 class DevelopmentPage extends StatelessWidget {
-  const DevelopmentPage({ Key? key }) : super(key: key);
+  const DevelopmentPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
